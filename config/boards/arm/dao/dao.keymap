@@ -8,6 +8,17 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+/ {
+    behaviors {
+        td_mt: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MOD_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp RG(SPACE)>, <&kp RG(S)>;
+        };
+    };
+
 #define DEF 0
 #define LWR 1
 #define RSE 2
@@ -27,7 +38,7 @@
 //        | LALT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | RALT |
 //                           | RSE | SPC | LWR |   | LWR | BKSP | RSE |
                         bindings = <
-   &none &kp GRAVE &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &none
+   &none &td_mt &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &none
             &kp B &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
             &kp LALT  &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &mt RALT BSLH
                          &kp SPACE &mt LSHIFT DEL &lt LWR TAB  &lt RSE ESC &lt RSE RET &mt RSHIFT BSPC 
