@@ -48,7 +48,7 @@
             label = "td_gui";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp RG(SPACE)>, <&kp RG(S)>;
+            bindings = <&mt LS(LA(LCTRL)) RG(SPACE)>, <&kp RG(S)>;
         };
         td_f112: tap_dance_f112 {
             compatible = "zmk,behavior-tap-dance";
