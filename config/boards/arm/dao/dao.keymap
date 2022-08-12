@@ -62,7 +62,7 @@
             label = "td_tild";
             #binding-cells = <0>;
             tapping-term-ms = <400>;
-            bindings = <&kp LC(GRAVE)>, <&kp F12>;
+            bindings = <&mt LG(LS(LA(LCTRL))) LC(GRAVE)>, <&kp F12>;
         };
     };
 
