@@ -23,14 +23,14 @@
     behaviors {
         td_gui: tap_dance_gui {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "td_gui";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp RG(SPACE)>, <&kp RG(S)>;
         };
         td_tild: tap_dance_tild {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_MOD_TAP";
+            label = "td_tild";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&kp LC(GRAVE)>, <&kp F12>;
