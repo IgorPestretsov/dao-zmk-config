@@ -41,6 +41,7 @@
                 ;
         };
     };
+
     behaviors {
         td_gui: tap_dance_gui {
             compatible = "zmk,behavior-tap-dance";
