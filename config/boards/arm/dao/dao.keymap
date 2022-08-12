@@ -47,21 +47,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_gui";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp RG(SPACE)>, <&kp RG(S)>;
         };
         td_f112: tap_dance_f112 {
             compatible = "zmk,behavior-tap-dance";
             label = "td_f112";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp F11>, <&kp F12>;
         };
         td_tild: tap_dance_tild {
             compatible = "zmk,behavior-tap-dance";
             label = "td_tild";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             bindings = <&kp LC(GRAVE)>, <&kp F12>;
         };
     };
