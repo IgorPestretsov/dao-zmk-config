@@ -47,14 +47,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_gui";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&mt LS(LA(LCTRL)) RG(SPACE)>, <&kp RG(S)>;
         };
         td_f112: tap_dance_f112 {
             compatible = "zmk,behavior-tap-dance";
             label = "td_f112";
             #binding-cells = <0>;
-            tapping-term-ms = <400>;
+            tapping-term-ms = <300>;
             bindings = <&kp F11>, <&kp F12>;
         };
         td_tild: tap_dance_tild {
@@ -79,7 +79,7 @@
    &none &td_gui &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &none
             &kp LC(TAB) &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &kp SQT
             &td_tild &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
-                        &mt LSHIFT DEL &kp SPACE  &lt LWR TAB  &lt ADJ ESC &lt RSE RET &mt RSHIFT BSPC 
+                        &mt LSHIFT DEL &kp SPACE  &lt LWR TAB  &lt ADJ ESC &lt RSE RET &mt RSHIFT BSPC
                         >;
                 };
                 lower_layer {
