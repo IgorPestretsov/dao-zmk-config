@@ -92,7 +92,7 @@
    &trans &kp LC(X) &kp PG_DN   &kp PG_UP &kp INS   &kp HOME   &kp END           &none    &kp N7   &kp N8   &kp N9   &none  &none &none
          &kp LC(V) &kp LC(KP_N1) &kp LC(KP_N2) &kp LC(KP_N3) &kp LC(KP_N4) &kp LC(KP_N5)        &none &kp N4 &kp N5 &kp N6 &none &none
          &kp LC(C) &kp LC(KP_N6)   &kp LALT &kp LCTRL   &kp LC(KP_N7)   &kp LC(KP_N8)        &none  &kp N1   &kp N2   &kp N3   &kp N0   &none
-                                              &lt ADJ TAB &trans &trans   &trans &trans &lt ADJ DEL
+                                              &trans &trans &trans   &trans &trans &trans
                         >;
                 };
 
@@ -106,7 +106,7 @@
    &trans &none &kp EQUAL &kp LS(EQUAL) &none &none &none    &kp LS(LA(F10)) &kp LS(LA(F9)) &none &kp MINUS &kp LS(MINUS) &kp RBKT &none
           &none &kp LS(N1) &kp LS(N2) &kp LS(N3) &kp LS(N4) &kp LS(N5)        &kp LS(N6) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp LS(N0) &none
           &none &kp F1 &kp F2 &kp F3 &kp F4 &kp F5        &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &td_f112
-                                                           &trans &trans &lt ADJ RET   &lt ADJ ESC &trans &trans
+                                                           &trans &trans &trans   &trans &trans &trans
                         >;
                 };
                 adjust_layer {
@@ -116,7 +116,7 @@
 //       |      |     |     |     |     |     |   |     |     |     |     |     |      |
 //                          |     |     |     |   |     |     |     |
                         bindings = <
-   &none  &kp GRAVE &none  &kp LC(RIGHT) &none &none &kp RG(W)        &none &none &kp CAPS &none &vim_past_from_zero &none &none 
+   &none  &kp GRAVE &none  &kp LC(RIGHT) &none &none &kp RG(W)        &none &none &kp CAPS &none &vim_past_from_zero &none &none
           &none   &none  &none &none &none &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none 
           &none   &none  &kp RG(X) &none &none &kp LC(LEFT)        &kp LA(HOME) &kp K_APP &kp RCTRL &kp RALT &none &kp LS(LC(F12))
                                                                     &trans &kp LGUI &ace_jump_pycharm   &trans &none &trans
