@@ -64,14 +64,12 @@
             tapping-term-ms = <400>;
             bindings = <&mt LG(LS(LA(LCTRL))) LC(GRAVE)>, <&kp F12>;
         };
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+        td_78: tap_dance_78 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_78";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LC(KP_N7)>, <&kp LC(KP_N8)>;
         };
     };
 
@@ -86,7 +84,7 @@
 //                           | SHIFT/DEL | SPC | LWR/TAB |   | ADJ/ESC | RSE/ENT| SHIFT/BackSPACE |
                         bindings = <
    &none &td_gui &kp Q &kp W &kp E &kp R &kp T &kp Y         &kp U  &kp I     &kp O   &kp P    &kp LBKT &none
-            &kp LC(TAB) &kp A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G &kp H         &hm LSHIFT J  &hm LCTRL K     &hm LALT L  &kp SEMI &kp SQT
+            &kp LC(TAB) &kp A &kp S &kp D &kp F &kp G &kp H         &kp J  &kp K     &kp L   &kp SEMI &kp SQT
             &td_tild &kp Z &kp X &kp C &kp V &kp B &kp N         &kp M  &kp COMMA &kp DOT &kp FSLH &kp BSLH
                         &mt LSHIFT DEL &kp SPACE  &lt LWR TAB  &lt ADJ ESC &lt RSE RET &mt RSHIFT BSPC
                         >;
@@ -100,7 +98,7 @@
                         bindings = <
    &trans &kp LC(V) &kp PG_DN   &kp PG_UP &kp INS   &kp HOME   &kp END           &none    &kp N7   &kp N8   &kp N9   &none  &none &none
          &kp LC(X) &kp LC(KP_N1) &kp LC(KP_N2) &kp LC(KP_N3) &kp LC(KP_N4) &kp LC(KP_N5)        &none &kp N4 &kp N5 &kp N6 &kp DOT &none
-         &kp LC(C) &kp LC(KP_N6)   &kp LALT &kp LCTRL   &kp LC(KP_N7)   &kp LC(KP_N8)        &none  &kp N1   &kp N2   &kp N3   &kp N0   &none
+         &kp LC(C) &kp LC(KP_N6)   &kp LALT &kp LCTRL   &kp LSHIFT   &td_78        &none  &kp N1   &kp N2   &kp N3   &kp N0   &none
                                               &trans &trans &trans   &trans &trans &trans
                         >;
                 };
@@ -126,8 +124,8 @@
 //           | TRANS |  GUI   | ace_jump_pycharm |        | TRANS | TRANS  | TRANS |
                         bindings = <
    &none  &kp GRAVE &none  &kp LC(RIGHT) &none &none &kp RG(W)        &none &none &kp CAPS &none &vim_past_from_zero &none &none
-          &none   &none  &none &none &none &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none 
-          &none   &none  &kp RG(X) &none &none &kp LC(LEFT)        &kp LA(HOME) &kp K_APP &kp RCTRL &kp RALT &none &kp LS(LC(F12))
+          &none   &none  &none &none &none &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp K_APP &none
+          &none   &none  &kp RG(X) &none &none &kp LC(LEFT)        &kp LA(HOME) &kp RSHIFT &kp RCTRL &kp RALT &none &kp LS(LC(F12))
                                     &trans &kp LGUI &ace_jump_pycharm   &trans &trans &trans
                         >;
                 };
