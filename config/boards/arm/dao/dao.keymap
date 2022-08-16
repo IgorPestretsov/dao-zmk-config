@@ -64,6 +64,13 @@
             tapping-term-ms = <400>;
             bindings = <&mt LG(LS(LA(LCTRL))) LC(GRAVE)>, <&kp F12>;
         };
+        td_rctrl: tap_dance_rctrl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "td_rctrl";
+            #binding-cells = <0>;
+            tapping-term-ms = <400>;
+            bindings = <&mt LS M>;
+        };
     };
 
         keymap {
