@@ -47,7 +47,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_gui";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <200>;
             bindings = <&mt LS(LA(LCTRL)) RG(SPACE)>, <&kp RG(S)>;
         };
         td_f112: tap_dance_f112 {
@@ -84,7 +84,7 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |     |  CTRL(V)  |  PG_DN    |  PG_UP  |  INS    |  HOME   |  END    |   | none |  7  |  8  |  9  | none| none| none |
+
 //       |  CTRL(X)  |  CTRL(1)  |  CTRL(2)|  CTRL(3)|  CTRL(4)|  CTRL(5)|   | none |  4  |  5  |  6  |  .  | none|
 //       |  CTRL(C)  |  CTRL(6)  |  ALT    |  CTRL   |  CTRL(7)|  CTRL(8)|   | none |  1  |  2  |  3  |  0  |     |
 //                                  | TRANS |  TRANS   | TRANS |            | TRANS | TRANS  | TRANS |
