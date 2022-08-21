@@ -24,6 +24,17 @@
 };
 / {
     combos {
+
+        combo_copy {
+            timeout-ms = <50>;
+            key-positions = <19 18>;
+            bindings = <&kp LC(C) >;
+        };
+        combo_paste {
+            timeout-ms = <50>;
+            key-positions = <7 6>;
+            bindings = <&kp LC(V) >;
+        };
         compatible = "zmk,combos";
         combo_left_ctrlshift {
             timeout-ms = <50>;
