@@ -85,24 +85,20 @@
             label = "Acejump";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
-                = <&macro_tap &kp SPACE>,
-                <&macro_tap &kp SPACE>,
-                <&macro_tap &kp S>,
-                <&macro_wait_time 10>,
-                <&macro_tap_time 10>,
+                = <&kp SPACE &kp SPACE &kp S>
                 ;
         };
          vim_past_from_zero: vim_past_from_zero {
             label = "vimpastzero";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
             bindings
-                = <&macro_tap &kp LS(SQT)>,
-                <&macro_tap &kp N0>,
-                <&macro_tap &kp P>,
-                <&macro_wait_time 10>,
-                <&macro_tap_time 10>,
+                = <&kp LS(SQT) &kp N0 &kp P>
                 ;
         };
     };
