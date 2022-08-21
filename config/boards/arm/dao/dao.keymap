@@ -28,7 +28,7 @@
         combo_left_ctrlalt {
             timeout-ms = <50>;
             key-positions = <29 28>;
-            bindings = <&kp LALT(LCTRL) >;
+            bindings = <&kp LA(LCTRL) >;
         };
         combo_leftshiftalt {
             timeout-ms = <50>;
@@ -43,7 +43,7 @@
         combo_right_ctrlalt {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            bindings = <&kp LALT(LCTRL) >;
+            bindings = <&kp LA(LCTRL) >;
         };
         combo_right_shiftalt {
             timeout-ms = <50>;
