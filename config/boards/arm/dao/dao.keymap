@@ -25,6 +25,16 @@
 / {
     combos {
 
+        combo_undo {
+            timeout-ms = <50>;
+            key-positions = <21 22>;
+            bindings = <&kp LC(Z) >;
+        };
+        combo_cut {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp LC(X) >;
+        };
         combo_copy {
             timeout-ms = <50>;
             key-positions = <18 17>;
@@ -32,7 +42,7 @@
         };
         combo_paste {
             timeout-ms = <50>;
-            key-positions = <6 5>;
+            key-positions = <5 4>;
             bindings = <&kp LC(V) >;
         };
         compatible = "zmk,combos";
@@ -78,7 +88,9 @@
             bindings
                 = <&macro_tap &kp SPACE>,
                 <&macro_tap &kp SPACE>,
-                <&macro_tap &kp S>
+                <&macro_tap &kp S>,
+                <&macro_wait_time 10>,
+                <&macro_tap_time 10>,
                 ;
         };
          vim_past_from_zero: vim_past_from_zero {
@@ -88,7 +100,9 @@
             bindings
                 = <&macro_tap &kp LS(SQT)>,
                 <&macro_tap &kp N0>,
-                <&macro_tap &kp P>
+                <&macro_tap &kp P>,
+                <&macro_wait_time 10>,
+                <&macro_tap_time 10>,
                 ;
         };
     };
