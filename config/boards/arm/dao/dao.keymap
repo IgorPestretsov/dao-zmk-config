@@ -106,6 +106,16 @@
                 = <&kp LS(SQT) &kp N0 &kp P>
                 ;
         };
+         vim_past_from_system: vim_past_from_zero {
+            label = "vimpastsystem";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings
+                = <&kp LS(SQT) &kp LS(N8) &kp P>
+                ;
+        };
     };
 
     behaviors {
@@ -183,7 +193,7 @@
 //           | TRANS |  GUI   | ace_jump_pycharm |        | TRANS | TRANS  | TRANS |
                         bindings = <
    &none  &kp GRAVE &none  &kp LC(RIGHT) &none &none &kp RG(W)        &none &none &kp CAPS &none &vim_past_from_zero &none &none
-          &none   &none  &none &none &none &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp K_APP &none
+          &none   &none  &vim_past_from_system &none &none &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp K_APP &none
           &none   &none  &kp RG(X) &none &none &kp LC(LEFT)        &kp LA(HOME) &sk RSHIFT &sk RCTRL &sk RALT &none &kp LS(LC(F12))
                                     &kp DEL &kp LGUI &ace_jump_pycharm   &trans &trans &trans
                         >;
