@@ -68,7 +68,7 @@
         };
         combo_lefctrltshiftalt {
             timeout-ms = <50>;
-            key-positions = <30 29 28>;
+            key-positions = <30 31>;
             bindings = <&mt LS(LA(LCTRL))>;
         };
         combo_right_ctrlshift {
@@ -88,7 +88,7 @@
         };
         combo_right_ctrlshiftalt {
             timeout-ms = <50>;
-            key-positions = <33 34 35>;
+            key-positions = <32 33>;
             bindings = <&mt LS(LA(LCTRL))>;
         };
     };
