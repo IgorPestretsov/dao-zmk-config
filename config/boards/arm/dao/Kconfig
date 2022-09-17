@@ -9,4 +9,4 @@ config BOARD_ENABLE_DCDC
 
 config ZMK_IDLE_SLEEP_TIMEOUT
 	int "Milliseconds of inactivity before entering deep sleep"
-	default 3600000
+	default 15000000
