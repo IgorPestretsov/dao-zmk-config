@@ -209,8 +209,8 @@
 //        | none |  none     |GUI(X)|none |none  |          |   SHIFT  | MENU  |  CTRL   |  ALT    |  none       |   SHIFT CTRL F12  |
 //           | TRANS |  GUI   | ace_jump_pycharm |        | TRANS | TRANS  | TRANS |
                         bindings = <
-   &none  &kp GRAVE &none  &kp LC(RIGHT) &LS(LC(LA(M))) &LS(LC(LA(Q))) &kp RG(W)        &kp RG(LA(X)) &kp RG(LA(C)) &kp CAPS &none &vim_past_from_zero &none &none
-          &none   &LS(LC(LA(N1)))  &LS(LC(LA(N2))) &LS(LC(LA(N3))) &LS(LC(LA(N4))) &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp K_APP &none
+   &none  &kp GRAVE &none  &kp LC(RIGHT) &kp LS(LC(LA(M))) &kp LS(LC(LA(Q))) &kp RG(W)        &kp RG(LA(X)) &kp RG(LA(C)) &kp CAPS &none &vim_past_from_zero &none &none
+          &none   &kp LS(LC(LA(N1)))  &kp LS(LC(LA(N2))) &kp LS(LC(LA(N3))) &kp LS(LC(LA(N4))) &none        &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp K_APP &none
           &none   &none  &kp RG(X) &none &none &kp LC(LEFT)        &kp LA(HOME) &kp HOME &kp END &sk LALT &none &kp LS(LC(F12))
                                     &kp DEL &kp LGUI &ace_jump_pycharm   &trans &trans &trans
                         >;
